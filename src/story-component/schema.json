@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SchematicsAngularComponent",
+  "title": "Thinktecture Story Component Schema",
+  "type": "object",
+  "description": "Creates a new model, component and story for the design systems workshop.",
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "The name of the project.",
+      "$default": {
+        "$source": "projectName"
+      }
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the component.",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use for the component?"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}
