@@ -1,7 +1,7 @@
 {
   "name": "design-systems",
-  "version": "0.0.0",
-  "description": "A blank schematics",
+  "version": "0.0.1",
+  "description": "Schematics for Design System workshops",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine src/**/*_spec.js"
@@ -9,8 +9,12 @@
   "keywords": [
     "schematics"
   ],
-  "author": "",
-  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/christianliebel/design-systems"
+  },
+  "author": "Christian Liebel",
+  "license": "BSD-3-Clause",
   "schematics": "./src/collection.json",
   "dependencies": {
     "@angular-devkit/core": "^8.1.2",
