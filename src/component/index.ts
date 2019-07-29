@@ -12,7 +12,7 @@ import {
 import { parseName } from '@schematics/angular/utility/parse-name';
 import { buildDefaultPath, getProject } from '@schematics/angular/utility/project';
 
-export function storyComponent(_options: any): Rule {
+export function component(_options: any): Rule {
     return chain([
         externalSchematic('@schematics/angular', 'module', {name: _options.name}),
         externalSchematic('@schematics/angular', 'component', {name: _options.name, module: _options.name}),

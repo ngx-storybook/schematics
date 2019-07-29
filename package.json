@@ -1,7 +1,7 @@
 {
-  "name": "design-systems",
+  "name": "@ngx-storybook/schematics",
   "version": "0.0.1",
-  "description": "Schematics for Design System workshops",
+  "description": "Schematics for Angular & Storybook workshops",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine src/**/*_spec.js"
@@ -10,10 +10,10 @@
     "schematics"
   ],
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/christianliebel/design-systems"
+    "type": "git",
+    "url": "https://github.com/christianliebel/ngx-storybook-schematics"
   },
-  "author": "Christian Liebel",
+  "author": "",
   "license": "BSD-3-Clause",
   "schematics": "./src/collection.json",
   "dependencies": {
