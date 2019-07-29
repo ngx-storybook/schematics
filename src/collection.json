@@ -1,7 +1,14 @@
 {
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
+    "ng-add": {
+      "description": "Prepares the project.",
+      "factory": "./project-setup/index#projectSetup",
+      "private": true,
+      "hidden": true
+    },
     "component": {
+      "aliases": ["c"],
       "description": "Creates a new story component.",
       "factory": "./component/index#component",
       "schema": "./component/schema.json"
