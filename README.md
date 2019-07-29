@@ -1,5 +1,7 @@
 # Schematics for Angular and Storybook Workshops
 
+[![npm version](https://badge.fury.io/js/%40ngx-storybook%2Fschematics.svg)](https://badge.fury.io/js/%40ngx-storybook%2Fschematics)
+
 ## Installation
 
 ```shell script
