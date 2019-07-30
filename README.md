@@ -12,6 +12,8 @@ This schematic automatically adjusts `.storybook/config.js` to include all `stor
 
 ## Usage
 
+### `component` (alias: `c`)
+
 ```shell script
 ng g @ngx-storybook/schematics:c button
 ```
