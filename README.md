@@ -19,3 +19,11 @@ ng g @ngx-storybook/schematics:c button
 ```
 
 This command creates a module, component and a story with the given name.
+
+### `stories` (alias: `s`)
+
+```shell script
+ng g @ngx-storybook/schematics:s my-stories
+```
+
+This command creates a stories file with the given name.

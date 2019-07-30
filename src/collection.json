@@ -12,6 +12,12 @@
       "description": "Creates a new story component.",
       "factory": "./component/index#component",
       "schema": "./component/schema.json"
+    },
+    "stories": {
+      "aliases": ["s"],
+      "description": "Creates new stories.",
+      "factory": "./stories/index#stories",
+      "schema": "./stories/schema.json"
     }
   }
 }

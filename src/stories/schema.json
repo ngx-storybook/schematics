@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "NgxStorybookStories",
+  "title": "@ngx-storybook Stories Schema",
+  "type": "object",
+  "description": "Creates new stories.",
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "The name of the project.",
+      "$default": {
+        "$source": "projectName"
+      }
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the stories.",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use for the stories?"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}
