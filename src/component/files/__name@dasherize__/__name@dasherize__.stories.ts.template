@@ -1,6 +1,9 @@
 import {<%= classify(name) %>Component} from './<%= dasherize(name) %>.component';
 
 export default {
-  component: <%= classify(name) %>Component,
   title: '<%= classify(name) %>Component'
 };
+
+export const Default = () => ({
+  component: <%= classify(name) %>Component
+});
