@@ -1,7 +1,6 @@
-import {storiesOf} from '@storybook/angular';
 import {<%= classify(name) %>Component} from './<%= dasherize(name) %>.component';
 
-storiesOf('Components | <%= classify(name) %>', module)
-  .add('Default', () => ({
-    component: <%= classify(name) %>Component,
-  }));
+export default {
+  component: {<%= classify(name) %>Component},
+  title: '{<%= classify(name) %>Component}'
+};

@@ -1,5 +1,3 @@
-import {storiesOf} from '@storybook/angular';
-
-storiesOf('<%= classify(name) %>', module)
-  .add('Default', () => ({
-  }));
+export default {
+  title: '<%= classify(name) %>'
+};
