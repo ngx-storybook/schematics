@@ -1,9 +1,12 @@
 import {<%= classify(name) %>Component} from './<%= dasherize(name) %>.component';
 
+const Template = (args: <%= classify(name) %>Component) => ({
+  component: <%= classify(name) %>Component,
+  props: args
+});
+
 export default {
-  title: '<%= classify(name) %>Component'
+  title: 'Components/<%= classify(name) %>Component'
 };
 
-export const Default = () => ({
-  component: <%= classify(name) %>Component
-});
+export const Default = Template.bind({});
