@@ -1,6 +1,7 @@
 import {<%= classify(name) %>Component} from './<%= dasherize(name) %>.component';
+import { Story } from '@storybook/angular';
 
-const Template = (args: <%= classify(name) %>Component) => ({
+const Template: Story<<%= classify(name) %>Component> = (args) => ({
   props: args
 });
 
