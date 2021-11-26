@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "id": "NgxStorybookStories",
+  "$id": "NgxStorybookStories",
   "title": "@ngx-storybook Stories Schema",
   "type": "object",
   "description": "Creates new stories.",
@@ -22,7 +22,5 @@
       "x-prompt": "What name would you like to use for the stories?"
     }
   },
-  "required": [
-    "name"
-  ]
+  "required": ["name"]
 }

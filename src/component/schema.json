@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "id": "NgxStorybookComponent",
+  "$id": "NgxStorybookComponent",
   "title": "@ngx-storybook Component Schema",
   "type": "object",
   "description": "Creates a new model, component and stories.",
@@ -22,7 +22,5 @@
       "x-prompt": "What name would you like to use for the module and component?"
     }
   },
-  "required": [
-    "name"
-  ]
+  "required": ["name"]
 }
