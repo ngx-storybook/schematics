@@ -12,4 +12,4 @@ export default {
 
 export const Default<%= classify(name) %> = Template.bind({});
 
-<%= classify(name) %>.args = {};
+Default<%= classify(name) %>.args = {};
