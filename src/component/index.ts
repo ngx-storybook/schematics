@@ -1,4 +1,4 @@
-import { strings } from '@angular-devkit/core';
+import { strings } from "@angular-devkit/core";
 import {
   apply,
   applyTemplates,
@@ -9,15 +9,15 @@ import {
   Rule,
   Tree,
   url,
-} from '@angular-devkit/schematics';
-import { Style } from '@schematics/angular/component/schema';
-import { parseName } from '@schematics/angular/utility/parse-name';
+} from "@angular-devkit/schematics";
+import { Style } from "@schematics/angular/component/schema";
+import { parseName } from "@schematics/angular/utility/parse-name";
 import {
   buildDefaultPath,
   getProject,
-} from '@schematics/angular/utility/project';
+} from "@schematics/angular/utility/project";
 
-const configKey = '@schematics/angular:component';
+const configKey = "@schematics/angular:component";
 
 export function component(_options: any): Rule {
   return chain([
@@ -29,8 +29,8 @@ export function component(_options: any): Rule {
         project.schematics[configKey].style;
       _options.style = style || Style.Css;
     },
-    externalSchematic('@schematics/angular', 'module', { name: _options.name }),
-    externalSchematic('@schematics/angular', 'component', {
+    externalSchematic("@schematics/angular", "module", { name: _options.name }),
+    externalSchematic("@schematics/angular", "component", {
       name: _options.name,
       module: _options.name,
       get style() {
@@ -45,9 +45,9 @@ export function component(_options: any): Rule {
          As a result the story is not saved in src/app/path/to/somewhere/path/to/somewhere/component/path/to/somewhere/component.stories.ts
          but in src/app/path/to/somewhere/component/component.stories.ts
      */
-      _options.name = _options.name.split('/').slice(-1).join();
+      _options.name = _options.name.split("/").slice(-1).join();
 
-      const templateSource = apply(url('./files'), [
+      const templateSource = apply(url("./files"), [
         applyTemplates({
           ...strings,
           ..._options,
