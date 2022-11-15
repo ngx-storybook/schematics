@@ -39,7 +39,11 @@ export function component(_options: any): Rule {
     }),
     (host: Tree) => {
       const project = getProject(host, _options.project);
-      const parsedPath = parseName(buildDefaultPath(project), _options.name);
+
+      if (_options.path === undefined) {
+        _options.path = buildDefaultPath(project);
+      }
+      const parsedPath = parseName(_options.path, _options.name);
 
       /* Gets the name of a path. Example: path/to/somewhere/component sets _option.name to component
          As a result the story is not saved in src/app/path/to/somewhere/path/to/somewhere/component/path/to/somewhere/component.stories.ts
