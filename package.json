@@ -1,6 +1,6 @@
 {
   "name": "@ngx-storybook/schematics",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Schematics for Angular & Storybook workshops",
   "scripts": {
     "build": "tsc -p tsconfig.json",
