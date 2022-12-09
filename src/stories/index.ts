@@ -13,7 +13,10 @@ import { buildDefaultPath, getProject } from '@schematics/angular/utility/projec
 export function stories(_options: any): Rule {
   return (host: Tree) => {
       const project = getProject(host, _options.project);
-      const parsedPath = parseName(buildDefaultPath(project), _options.name);
+    if (_options.path === undefined) {
+      _options.path = buildDefaultPath(project);
+    }
+    const parsedPath = parseName(_options.path, _options.name);
       const templateSource = apply(url('./files'), [
         applyTemplates({
           ...strings,
